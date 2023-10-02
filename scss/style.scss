@@ -1,0 +1,234 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 14px;
+	color: #252B42;
+	font-weight: 500;
+	font-family: Montserrat;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+ }
+._container {
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 0px 15px;
+	box-sizing: content-box;
+}
+._ibg {
+	position: relative;
+ }
+ ._ibg img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	object-fit: cover;
+}
+/*--------------Header-------------------*/
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50;
+padding: 20px 0px;
+// background: rgb(2,0,36);
+// background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(46,10,122,0.5662640056022409) 67%, rgba(0,212,255,1) 100%);
+
+	&__container {
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__logo {
+		img {
+		height: 80px;
+		width: 100px;
+		margin: 0px 20px 0px 0px;
+		}
+	}
+	@media (max-width: 620px) {
+		&__logo{
+			margin: 0px 20px 20px 0px;
+		}
+	}
+
+	&__name {
+		font-size: 30px;
+		font-weight: 800;
+		letter-spacing: 0.1px;
+		line-height: 140%;
+		color: #f7f2f2;
+		text-align: center;
+		align-items: center;
+		align-self: center;
+	}
+	@media (max-width: 620px) {
+		&__name{
+			font-size: 20px;
+		}
+	}
+
+	&__menu {
+		flex: 1 1 auto;
+	}
+}
+.menu {
+display: flex;
+
+	&__list {
+		padding: 0px 0px 0px 40px;
+		display: flex;
+		justify-content:space-around;
+	}
+
+	&__item {
+		align-self: center;
+	}
+	&__item:not(:last-child) {
+		margin: 0px 15px 0px 0px;
+	}
+
+	&__link {
+		font-size: 20px ;
+		line-height: 140%;
+		font-weight: 600;
+		color: #f9faf9;
+	}
+	&__link:hover {
+		text-decoration: underline;
+	}
+	&__contacts {
+		padding: 0px 0px 0px 50px;
+	}
+}
+.contact {
+	color: #faf6f6f6;
+	
+	a {
+			color: inherit;
+			font-size: 20px;
+			line-height: 170%;
+			font-weight: 600;
+			padding: 0px 0px 0px 35px;
+	}
+	a:hover {
+			text-decoration: underline;
+	}
+
+	&__a1 {
+		position: relative;
+	}
+	&__a1::before {
+		content: "";
+		display: block;
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		background: url('../img/iconsTel/A1.png') 0 5px  no-repeat;
+		background-size: 30px 25px;
+	}
+	&__life::before {
+		content: "";
+		display: block;
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		background: url('../img/iconsTel/life.png') 0 5px  no-repeat;
+		background-size: 30px 25px;
+	}
+	&__mts::before {
+		content: "";
+		display: block;
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		background: url('../img/iconsTel/mts.png') 0 5px  no-repeat;
+		background-size: 30px 25px;
+	}
+}
+/*--------------Page-----------------*/
+.page {
+
+	&__main-block {
+	}
+}
+/*--------------Main-block-----------------*/
+
+.main-block {
+	position: relative;
+padding: 120px 0px 100px;
+
+	&__container {
+
+	}
+
+	&__body {
+		padding: 100px 0px;
+		color: aquamarine;
+		position: relative;
+		z-index: 2;
+	}
+
+	h1 {
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 140%;
+		letter-spacing: 0.1px;
+	}
+	&__text {
+	}
+
+	&__list {
+	}
+
+	&__link {
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 170%;
+		letter-spacing: 0.1px;
+	}
+	&__image {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
+	@media (max-width: 1300px) {
+		&__image img{
+			object-position: right;
+		}
+	}
+	@media (max-width: 992px) {
+		&__image img{
+			opacity: 0.5;
+		}
+}
+
+}
