@@ -153,15 +153,15 @@ body {
 .menu {
   display: flex;
 }
+@media (max-width: 500px) {
+  .menu.menu {
+    display: block;
+  }
+}
 .menu__list {
   padding: 0px 0px 0px 40px;
   display: flex;
   justify-content: space-around;
-}
-@media (max-width: 500px) {
-  .menu__list {
-    display: block;
-  }
 }
 .menu__item {
   align-self: center;
@@ -243,6 +243,14 @@ body {
   font-weight: 700;
   line-height: 140%;
   letter-spacing: 0.1px;
+}
+@media (max-width: 500px) {
+  .main-block h1 {
+    font-size: 30px;
+  }
+  .main-block__body {
+    padding: 150px 0px 50px;
+  }
 }
 .main-block__link {
   font-size: 30px;

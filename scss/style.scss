@@ -98,17 +98,19 @@ padding: 20px 0px;
 }
 .menu {
 display: flex;
+@media (max-width: 500px) {
+    &.menu {
+        display: block;
+    }
+    
+}
 
 	&__list {
 		padding: 0px 0px 0px 40px;
 		display: flex;
 		justify-content:space-around;
 	}
-    @media (max-width: 500px) {
-		&__list{
-			display: block;
-		}
-	}
+    
 
 	&__item {
 		align-self: center;
@@ -204,6 +206,14 @@ padding: 120px 0px 100px;
 		line-height: 140%;
 		letter-spacing: 0.1px;
 	}
+    @media (max-width: 500px) {
+        h1 {
+            font-size: 30px;
+        }
+        &__body {
+		padding: 150px 0px 50px;
+		}
+    }
 	&__text {
 	}
 
