@@ -70,11 +70,11 @@ padding: 20px 0px;
 		margin: 0px 20px 0px 0px;
 		}
 	}
-	@media (max-width: 620px) {
-		&__logo{
-			margin: 0px 20px 20px 0px;
-		}
-	}
+	// @media (max-width: 620px) {
+	// 	&__logo{
+	// 		margin: 0px 20px 20px 0px;
+	// 	}
+	// }
 
 	&__name {
 		font-size: 30px;
@@ -208,7 +208,7 @@ padding: 120px 0px 100px;
 	}
     @media (max-width: 500px) {
         h1 {
-            font-size: 30px;
+            display: none;
         }
         &__body {
 		padding: 150px 0px 50px;
